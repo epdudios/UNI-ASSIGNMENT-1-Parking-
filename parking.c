@@ -2,7 +2,7 @@
 #include <string.h>
 int main (void)
 {
-	int *dkts,*dkts2,i,k,e,c,cp=0,b,bp=0,PRKNG[200]={0},PRKNG2[40]={0};
+	int *dkts,*dkts2,i,k,e,c,t,cp=0,b,bp=0,PRKNG[200]={0},PRKNG2[40]={0};
 	char AK[11],a,CAR[200][11],BIKE[40][11];
     while (1)
     {
@@ -71,7 +71,8 @@ int main (void)
     }
     cp=cp*10;
     bp=bp*4;
-    printf("Ta sunolika Esoda tou Parking einai:%d\n",(cp+bp));
+    t=cp+bp;
+    printf("Ta sunolika Esoda tou Parking einai:%d\n",t);
     printf("Oi Eleu8eres 8eseis pou exei to parking einai:");
     printf("Gia Autokinhta oi:");
 	for (i=0;i<200;i++)
@@ -128,4 +129,5 @@ int psaksimoBike(char BIKE[40][11],char AK[11],int e)
 		
 	}
 	
-
+/*exw kanei kapoio  la8os kai den leitourgei h while basika exw kanei 
+polla la8h alla auto me thn while me exei apoteleiwsei */
